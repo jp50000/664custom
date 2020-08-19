@@ -31,6 +31,7 @@
                         </div>
                       </div>
                     </div>
+                    <a href="<?php echo base_url(); ?>Mantto">
                     <div class="card-footer ">
                       <hr>
                       <div class="stats text-white">
@@ -38,6 +39,7 @@
                         Entrar
                       </div>
                     </div>
+                    </a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -106,5 +108,5 @@
       </div>
     </div>
   </div>
-  </div>  
+  </div>
 </div>
