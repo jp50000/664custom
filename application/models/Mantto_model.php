@@ -39,4 +39,13 @@ class Mantto_model extends CI_Model{
     $this->db->where('Id', $id);
     return  $this->db->delete('Mantto');
   }
+
+  public function GetLasRecord()
+  {
+    $this->db->select('Mantto')->ORDER_BY('Folio',"desc"->limit(1));
+    $this->db->from('Mantto');
+    $datos=$this->db->get()->row();
+
+    return $datos;
+  }
 }

@@ -60,69 +60,63 @@
           <div class="modal-body">
             <form action="<?php echo base_url(); ?>Mantto/create" method="post">
               <div class="row">
-                <div class="col-md-12 col-sm-12 px-2">
+                <div class="col-md-12 pr-2">
                   <div class="form-group">
                     <label>Folio</label>
-                    <input type="text" name="Folio" class="form-control" placeholder="Nombre Completo" value="" required>
+                    <input type="text" name="Folio" class="form-control" placeholder="" value="">
                   </div>
                 </div>
               </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Nombre</label>
-                        <input type="text" name="Name" class="form-control" placeholder="Nombre Completo" value="" required>
-                      </div>
-                    </div>
+              <div class="row">
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" name="Name" class="form-control" placeholder="" value="" required>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Dirrecion</label>
-                        <input type="text" name="Address" class="form-control" placeholder="Dirrecion del Cliente" value="">
-                      </div>
-                    </div>
+                </div>
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Correo</label>
+                    <input type="email" name="Email" class="form-control" placeholder="" value="">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Ciudad</label>
-                        <input type="text" name="City" class="form-control" placeholder="Ciudad del Cliente" value="">
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 pr-2">
+                  <div class="form-group">
+                    <label>Dirrecion</label>
+                    <input type="text" name="Address" class="form-control" placeholder="" value="">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Código Postal</label>
-                        <input type="text" name="Zip" class="form-control" placeholder="Código Postal del Cliente" value="">
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Ciudad</label>
+                    <input type="text" name="City" class="form-control" placeholder="" value="">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="Email" class="form-control" placeholder="Email del Cliente" value="" required>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Codigo Postal</label>
+                    <input type="text" name="Zip" class="form-control" placeholder="" value="">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Telefono</label>
-                        <input type="text" name="Telefono" class="form-control" placeholder="Telefono del Cliente" value="">
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Telefono</label>
+                    <input type="text" name="Telefono" class="form-control" placeholder="" value="">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 px-2">
-                      <div class="form-group">
-                        <label>Celular</label>
-                        <input type="text" name="Cellphone" class="form-control" placeholder="Celular del Cliente" value="" required>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-md-6 pr-1">
+                  <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" name="Cellphone" class="form-control" placeholder="" value="">
                   </div>
+                </div>
+              </div>
                   <div class="row">
                     <div class="update ml-auto mr-auto">
                       <button type="submit" class="btn btn-outline-secondary btn-round"> <i class="fas fa-plus"></i> Guardar</button>

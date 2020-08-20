@@ -12,6 +12,26 @@ class Mantto extends CI_Controller{
 
   function index()
   {
+    //Prueba 1
+    // $Folio=$this->Mantto_model->GetLasRecord();
+    // $max=0; $temp=0;
+    // if ($i=0; $i < count($Folio); $i++) {
+    //   $temp=$Folio[$i]->Mantto_model;
+    //   if ($temp>$max) {
+    //     $max=$temp;
+    //   }
+    // }
+
+    //Intento 2
+    // $Count=0;
+    // $last=$this->Mantto_model->GetLasRecord();
+    // if ($last->$Folio===null or $last->$Folio=='pendiente') {
+    //   $Count=1;
+    // }
+    // $foliocurrent=$last;
+    //
+    // $foli= array('Folio' =>$this->Mantto_model->GetLasRecord(),'Folio' =>$foliocurrent,'pendiente'=>$count,);
+
     $datos = array('title' => "Recibo");
     $data = array('mantto' =>$this->Mantto_model->GetMantto());
     $this->load->view('Layouts/head',$datos);
@@ -35,7 +55,6 @@ class Mantto extends CI_Controller{
 
     }
 
-
     // if (//$this->Mantto_model->AddMantto($data)) {
     //   redirect(base_url().'Car/create/'.Id);
     // }
@@ -54,6 +73,7 @@ class Mantto extends CI_Controller{
 
   public function update()
   {
+    $Id=$this->input->post('Id');
     $datos = array('Folio' =>$this->input->post('Folio'),
     'Name' =>$this->input->post('Name'),
     'Address'=>$this->input->post('Address'),
@@ -63,7 +83,7 @@ class Mantto extends CI_Controller{
     'Telefono'=>$this->input->post('Telefono'),
     'Cellphone'=>$this->input->post('Cellphone'));
 
-        if ($this->Mantto_model->UpdateMantto($id,$datos)) {
+        if ($this->Mantto_model->UpdateMantto($Id,$datos)) {
         redirect(base_url().'Mantto');
         }
         else {
